@@ -17,7 +17,7 @@ class SSITest(unittest.TestCase):
         self.browser.get('https://forms-uat.kiwirail.co.nz/Designer/Runtime/Form/Site+Safety+Inspection')
         #find the username field and enter the email example@yahoo.com.
         username = self.browser.find_elements_by_css_selector("input[name=loginfmt]")
-        username[0].send_keys('matt.belworthy.lewthwaite@kiwirail.co.nz')
+        username[0].send_keys('')
         #find the next button and click it.
         nextButton = self.browser.find_elements_by_xpath("//input[@value='Next']")[0]
         nextButton.click()
